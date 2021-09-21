@@ -23,7 +23,7 @@ public class User implements Serializable {
 	@OneToOne(mappedBy = "employee_master", cascade = CascadeType.ALL)
 	private Employee employee;
 	
-	@OneToOne(mappedBy="statusreport")
+	@OneToOne(mappedBy="status")
 	private StatusReport statusReport;
 	
 	public StatusReport getStatusReport() {
