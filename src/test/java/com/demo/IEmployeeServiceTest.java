@@ -63,14 +63,14 @@ public class IEmployeeServiceTest {
 		
 	}
 	
-	@Test
-	// to test updation of employees
-    void updateEmployeeTest() {
-	Employee emp = new Employee(101,"niranj","mani","nir@gmail.com");
-	when(employeeRepository.findById(emp.getUserId())).thenReturn(emp);
-	emp.setEmail("ben@gmail.com");
-    @SuppressWarnings("unused")
-	Employee updateEmp = employeeService.updateEmployee(emp);
+// 	@Test
+// 	// to test updation of employees
+//     void updateEmployeeTest() {
+// 	Employee emp = new Employee(101,"niranj","mani","nir@gmail.com");
+// 	when(employeeRepository.findById(emp.getUserId())).thenReturn(emp);
+// 	emp.setEmail("ben@gmail.com");
+//     @SuppressWarnings("unused")
+// 	Employee updateEmp = employeeService.updateEmployee(emp);
 	
-	}
+// 	}
 }
