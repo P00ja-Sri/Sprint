@@ -42,7 +42,7 @@ public class SwaggerConfiguration {
 	public ApiInfo apiEndPointInfo(){
         return new ApiInfoBuilder().title("EMPLOYEE MANAGEMENT SYSTEM")
                 .description("Sprint")
-                .contact(new Contact("Sprint", "https://EmployeeManagementSystem.com", "pavithramohan1712@gmail.com"))
+                //.contact(new Contact("Sprint", "https://EmployeeManagementSystem.com", "pavithramohan1712@gmail.com"))
                 .license("Apache 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
                 .version("0.0.1-SNAPSHOT")
