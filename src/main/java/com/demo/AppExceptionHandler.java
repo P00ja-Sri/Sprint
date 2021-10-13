@@ -25,12 +25,12 @@ public class AppExceptionHandler extends ResponseEntityExceptionHandler {
 		return handleExceptionInternal(e,msg,new HttpHeaders(),HttpStatus.CONFLICT, request);
 	}
 	
-	@ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "error in input")
-	//Annotation for handling exceptions in specific handler classes 
-	@ExceptionHandler(EntityNotFoundException.class)
-	public void SQLExceptionHandler(Exception e) {
+// 	@ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "error in input")
+// 	//Annotation for handling exceptions in specific handler classes 
+// 	@ExceptionHandler(EntityNotFoundException.class)
+// 	public void SQLExceptionHandler(Exception e) {
 		
-	}
+// 	}
 	
 	@Override
 	public ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException e, HttpHeaders headers,HttpStatus status,WebRequest request) {
